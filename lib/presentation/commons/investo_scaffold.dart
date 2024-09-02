@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:investo_app/data/datasource/resources/custom_paint/wava_clipper_bottom.dart';
-import 'package:investo_app/data/datasource/resources/custom_paint/wave_clipper_top.dart';
+import 'package:investo_app/data/datasource/custom_paint/wava_clipper_bottom.dart';
+import 'package:investo_app/data/datasource/custom_paint/wave_clipper_top.dart';
 
 class InvestoScaffold extends StatelessWidget {
   final Widget child;
@@ -21,7 +21,7 @@ class InvestoScaffold extends StatelessWidget {
                 clipper: WaveClipperTop(),
                 child: Container(
                   alignment: Alignment.center,
-                  color: Colors.lightGreen.withOpacity(0.4),
+                  color: const Color(0xff009773).withOpacity(0.4),
                   height: 230,
                 ),
               ),
@@ -30,7 +30,7 @@ class InvestoScaffold extends StatelessWidget {
               clipper: WaveClipperTop(),
               child: Container(
                 alignment: Alignment.center,
-                color: Colors.lightGreen,
+                color: const Color(0xff000000).withOpacity(0.3),
                 height: 200,
               ),
             ),
@@ -40,7 +40,7 @@ class InvestoScaffold extends StatelessWidget {
                 clipper: WaveClipperBottom(),
                 child: Container(
                   alignment: Alignment.center,
-                  color: Colors.lightGreen,
+                  color: const Color(0xff000000).withOpacity(0.3),
                   height: 200,
                 ),
               ),
@@ -53,7 +53,7 @@ class InvestoScaffold extends StatelessWidget {
                   clipper: WaveClipperBottom(),
                   child: Container(
                     alignment: Alignment.center,
-                    color: Colors.lightGreen.withOpacity(0.4),
+                    color: const Color(0xff009773).withOpacity(0.4),
                     height: 230,
                   ),
                 ),
